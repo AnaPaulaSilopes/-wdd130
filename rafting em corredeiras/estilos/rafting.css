@@ -1,0 +1,95 @@
+/* Variáveis CSS para esquema de cores e fontes */
+:root {
+    --cor-primaria: #055a05;
+    /* Verde-floresta */
+    --cor-secundaria: #f4a261;
+    /* Bege/Laranja médio */
+    --cor-destaque1: #264653;
+    /* Azul-escuro acinzentado */
+    --cor-destaque2: #e9c46a;
+    /* Amarelo-claro dourado */
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Reset do Box-Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais do Body */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+/* Limite de largura centralizado para o layout */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Estilização dos Títulos */
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Espaçamento básico para elementos principais */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Remoção de sublinhado nos ícones do rodapé */
+.redes-sociais a {
+    text-decoration: none;
+}
+
+/* --- Estilização da Seção Hero --- */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-destaque1);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 4px;
+}
